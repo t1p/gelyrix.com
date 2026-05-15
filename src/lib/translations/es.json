@@ -1,0 +1,38 @@
+{
+	"site": {
+		"name": "Gelyrix",
+		"tagline": "La vida continúa, solo en pausa",
+		"description": "Iniciativa sin ánimo de lucro que desarrolla infraestructura de criónica y neurosalvaguarda."
+	},
+	"nav": {
+		"home": "Inicio",
+		"about": "Sobre Gelyrix",
+		"howItWorks": "Cómo funciona",
+		"services": "Servicios",
+		"lab": "Laboratorio",
+		"blog": "Conocimiento",
+		"transparency": "Transparencia",
+		"investors": "Inversores",
+		"faq": "FAQ",
+		"contacts": "Contactos",
+		"legal": "Legal"
+	},
+	"common": {
+		"learnCryonics": "Entender qué es la criónica",
+		"requestConsultation": "Solicitar consulta",
+		"discussNeuro": "Hablar de crio / neuro",
+		"explore": "Explorar",
+		"more": "Más",
+		"readAll": "Leer todo",
+		"contactUs": "Contactar",
+		"language": "Idioma",
+		"menu": "Menú"
+	},
+	"footer": {
+		"note": "Gelyrix es una iniciativa sin ánimo de lucro centrada en investigación criónica abierta.",
+		"cta": "Iniciar conversación",
+		"navigation": "Navegación",
+		"more": "Más",
+		"rights": "Todos los derechos reservados."
+	}
+}
