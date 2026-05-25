@@ -1,8 +1,17 @@
-import { adminConfigured, createAdminSession, validateAdminCredentials } from '$lib/server/adminAuth';
 import { fail, redirect } from '@sveltejs/kit';
 import type { Actions, PageServerLoad } from './$types';
+import { adminConfigured, createAdminSession, validateAdminCredentials } from '$lib/server/adminAuth';
+
+const isGithubPagesDemo = process.env.BUILD_TARGET === 'github-pages';
+
+const ensureStaticBuildIsBlocked = () => {
+	if (isGithubPagesDemo) {
+		throw redirect(302, '/');
+	}
+};
 
 export const load: PageServerLoad = async ({ locals }) => {
+	ensureStaticBuildIsBlocked();
 	if (locals.isAdmin) {
 		throw redirect(303, '/admin');
 	}
@@ -14,20 +23,19 @@ export const load: PageServerLoad = async ({ locals }) => {
 
 export const actions: Actions = {
 	default: async ({ request, cookies }) => {
-		const formData = await request.formData();
-		const login = String(formData.get('login') ?? '');
-		const password = String(formData.get('password') ?? '');
-
+		ensureStaticBuildIsBlocked();
 		if (!adminConfigured()) {
 			return fail(500, {
-				message: 'ADMIN_LOGIN и ADMIN_PASSWORD не настроены в .env'
+				error: 'Админ-доступ не настроен. Установите ADMIN_LOGIN, ADMIN_PASSWORD и ADMIN_SESSION_SECRET.'
 			});
 		}
 
+		const formData = await request.formData();
+		const login = String(formData.get('login') ?? '').trim();
+		const password = String(formData.get('password') ?? '').trim();
+
 		if (!validateAdminCredentials(login, password)) {
-			return fail(401, {
-				message: 'Неверный логин или пароль'
-			});
+			return fail(401, { error: 'Неверный пароль.' });
 		}
 
 		createAdminSession(cookies, login);

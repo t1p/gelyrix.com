@@ -3,6 +3,8 @@ import { defaultLocale, getLocalizedPath, siteOrigin, supportedLocales, type Sup
 import { readCmsArticles } from '$lib/server/adminStore';
 import type { RequestHandler } from './$types';
 
+const isGithubPagesDemo = process.env.BUILD_TARGET === 'github-pages';
+
 const staticPaths = [
 	'/',
 	'/about',
@@ -26,11 +28,12 @@ const escapeXml = (value: string) =>
 		.replaceAll("'", '&apos;');
 
 const getArticlePaths = async () => {
-	const cmsArticles = await readCmsArticles();
+	const cmsArticles = isGithubPagesDemo ? null : await readCmsArticles();
 	const paths = new Set<string>();
 
 	for (const locale of supportedLocales) {
-		const localizedArticles = cmsArticles?.[locale] ?? fallbackArticles[locale as keyof typeof fallbackArticles] ?? fallbackArticles.en;
+		const localizedArticles =
+			cmsArticles?.[locale] ?? fallbackArticles[locale as keyof typeof fallbackArticles] ?? fallbackArticles.en;
 		for (const article of localizedArticles) {
 			paths.add(`/blog/${article.slug}`);
 		}

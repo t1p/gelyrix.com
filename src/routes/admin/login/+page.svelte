@@ -23,9 +23,9 @@
 				</div>
 			{/if}
 
-			{#if form?.message}
+			{#if form?.error}
 				<div class="mt-5 rounded-lg border border-sun/30 bg-sun/10 p-4 text-sm text-ink/75">
-					{form.message}
+					{form.error}
 				</div>
 			{/if}
 
