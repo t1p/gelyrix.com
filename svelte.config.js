@@ -25,7 +25,8 @@ const config = {
 		},
 		prerender: {
 			handleHttpError: 'warn',
-			entries: ['*']
+			handleUnseenRoutes: 'warn',
+			entries: ['/', '/about', '/services', '/how-it-works', '/faq', '/contacts', '/sitemap.xml']
 		}
 	}
 };

@@ -43,7 +43,10 @@
 
 	const activeLocale = () => data.locale ?? defaultLocale;
 	const localizedHref = (href: string) => localizeHref(href, activeLocale());
-	const localizedCurrentHref = (nextLocale: SupportedLocale) => localizeHref(`${$page.url.pathname}${$page.url.search}`, nextLocale);
+	const localizedCurrentHref = (nextLocale: SupportedLocale) => {
+		const search = browser ? $page.url.search : '';
+		return localizeHref(`${$page.url.pathname}${search}`, nextLocale);
+	};
 
 	const changeLocale = (nextLocale: SupportedLocale) => {
 		setLocale(nextLocale);

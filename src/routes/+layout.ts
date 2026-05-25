@@ -1,5 +1,4 @@
-const isGithubPagesDemo = import.meta.env.BUILD_TARGET === 'github-pages';
-
-export const ssr = !isGithubPagesDemo;
+export const ssr = true;
 export const csr = true;
-export const prerender = isGithubPagesDemo;
+export const prerender = true;
+export const trailingSlash = 'always';
