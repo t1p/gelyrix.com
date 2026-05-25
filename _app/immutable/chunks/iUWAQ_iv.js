@@ -1,0 +1,1 @@
+import{N as c,Q as _,Y as o,Z as d,_ as T,a0 as b,a1 as y,W as E,a2 as g,V as f}from"./Cospwin5.js";function v(t,i,u=!1){_&&o();var r=new g(t),h=u?d:0;function n(a,s){if(_){const l=T(t)===b;if(a===l){var e=y();E(e),r.anchor=e,f(!1),r.ensure(a,s),f(!0);return}}r.ensure(a,s)}c(()=>{var a=!1;i((s,e=!0)=>{a=!0,n(e,s)}),a||n(!1,null)},h)}export{v as i};
