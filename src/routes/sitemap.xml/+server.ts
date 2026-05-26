@@ -12,6 +12,8 @@ import {
 import { readCmsArticles } from '$lib/server/adminStore';
 import type { RequestHandler } from './$types';
 
+export const prerender = true;
+
 const sitemapOrigin = isGithubPagesDemo ? `${githubPagesOrigin}${githubPagesBasePath}` : siteOrigin;
 
 const staticPaths = [
