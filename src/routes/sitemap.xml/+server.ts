@@ -1,9 +1,18 @@
 import { articles as fallbackArticles } from '$lib/content';
-import { defaultLocale, getLocalizedPath, siteOrigin, supportedLocales, type SupportedLocale } from '$lib/locales';
+import {
+	defaultLocale,
+	getLocalizedPath,
+	githubPagesBasePath,
+	githubPagesOrigin,
+	isGithubPagesDemo,
+	siteOrigin,
+	supportedLocales,
+	type SupportedLocale
+} from '$lib/locales';
 import { readCmsArticles } from '$lib/server/adminStore';
 import type { RequestHandler } from './$types';
 
-const isGithubPagesDemo = process.env.BUILD_TARGET === 'github-pages';
+const sitemapOrigin = isGithubPagesDemo ? `${githubPagesOrigin}${githubPagesBasePath}` : siteOrigin;
 
 const staticPaths = [
 	'/',
@@ -43,16 +52,16 @@ const getArticlePaths = async () => {
 };
 
 const renderAlternateLinks = (path: string) =>
-	supportedLocales
+	((isGithubPagesDemo ? [defaultLocale] : supportedLocales) as readonly SupportedLocale[])
 		.map((locale) => {
-			const href = `${siteOrigin}${getLocalizedPath(path, locale)}`;
+			const href = `${sitemapOrigin}${getLocalizedPath(path, locale)}`;
 			return `    <xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml(href)}" />`;
 		})
 		.join('\n');
 
 const renderUrl = (path: string, locale: SupportedLocale) => {
-	const loc = `${siteOrigin}${getLocalizedPath(path, locale)}`;
-	const xDefault = `${siteOrigin}${getLocalizedPath(path, defaultLocale)}`;
+	const loc = `${sitemapOrigin}${getLocalizedPath(path, locale)}`;
+	const xDefault = `${sitemapOrigin}${getLocalizedPath(path, defaultLocale)}`;
 
 	return `  <url>
     <loc>${escapeXml(loc)}</loc>

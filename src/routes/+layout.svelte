@@ -1,8 +1,15 @@
 <script lang="ts">
 	import '../app.css';
+	import { base } from '$app/paths';
 	import { onNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { defaultLocale, localizeHref, supportedLocales, type SupportedLocale } from '$lib/locales';
+	import {
+		defaultLocale,
+		isGithubPagesDemo,
+		localizeHref,
+		supportedLocales,
+		type SupportedLocale
+	} from '$lib/locales';
 	import { locale, t } from 'svelte-i18n';
 	import { setLocale } from '$lib/i18n';
 	import { browser } from '$app/environment';
@@ -43,6 +50,8 @@
 
 	const activeLocale = () => data.locale ?? defaultLocale;
 	const localizedHref = (href: string) => localizeHref(href, activeLocale());
+	const withBaseAsset = (assetPath: string) => `${base}${assetPath}`;
+	const visibleLocales: readonly SupportedLocale[] = isGithubPagesDemo ? [defaultLocale] : supportedLocales;
 	const localizedCurrentHref = (nextLocale: SupportedLocale) => {
 		const search = browser ? $page.url.search : '';
 		return localizeHref(`${$page.url.pathname}${search}`, nextLocale);
@@ -86,8 +95,8 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" type="image/jpeg" href="/logo.jpeg" />
-	<link rel="apple-touch-icon" href="/logo.jpeg" />
+	<link rel="icon" type="image/jpeg" href={withBaseAsset('/logo.jpeg')} />
+	<link rel="apple-touch-icon" href={withBaseAsset('/logo.jpeg')} />
 	{#if data.canonicalUrl}
 		<link rel="canonical" href={data.canonicalUrl} />
 	{/if}
@@ -103,7 +112,7 @@
 	<header class="sticky top-0 z-40 border-b border-mist/70 bg-white/80 shadow-[0_1px_0_rgba(11,31,26,0.03)] backdrop-blur">
 		<div class="page-container flex items-center justify-between gap-4 py-4">
 			<a href={localizedHref('/')} class="flex shrink-0 items-center gap-3">
-				<img class="h-10 w-10 rounded-lg object-cover shadow-soft" src="/logo.jpeg" alt="Gelyrix" />
+				<img class="h-10 w-10 rounded-lg object-cover shadow-soft" src={withBaseAsset('/logo.jpeg')} alt="Gelyrix" />
 				<div class="leading-tight">
 					<div class="text-base font-semibold text-ink">{$t('site.name')}</div>
 					<div class="hidden text-xs uppercase text-ink/50 2xl:block">{$t('site.tagline')}</div>
@@ -138,7 +147,7 @@
 					<div
 						class="absolute right-0 mt-3 grid w-28 gap-1 rounded-lg border border-mist/90 bg-white/95 p-2 shadow-soft backdrop-blur"
 					>
-						{#each supportedLocales as option}
+						{#each visibleLocales as option}
 							<a
 								class={`rounded-md px-3 py-2 text-left text-xs font-semibold ${$locale === option ? 'bg-evergreen text-white' : 'text-ink/70 hover:bg-mist'}`}
 								href={localizedCurrentHref(option)}
@@ -162,7 +171,7 @@
 						{/each}
 						<div class="mt-2 flex items-center gap-2 text-xs font-semibold text-ink/50">
 							{$t('common.language')}:
-							{#each supportedLocales as option}
+							{#each visibleLocales as option}
 								<a class="rounded-md px-2 py-1 text-ink/60" href={localizedCurrentHref(option)} onclick={() => changeLocale(option)}>
 									{option.toUpperCase()}
 								</a>
@@ -182,7 +191,7 @@
 		<div class="page-container grid gap-10 py-12 md:grid-cols-[1.3fr_1fr_1fr]">
 			<div class="space-y-4">
 				<div class="flex items-center gap-3">
-					<img class="h-9 w-9 rounded-lg object-cover" src="/logo.jpeg" alt="Gelyrix" />
+					<img class="h-9 w-9 rounded-lg object-cover" src={withBaseAsset('/logo.jpeg')} alt="Gelyrix" />
 					<div class="text-lg font-semibold">{$t('site.name')}</div>
 				</div>
 				<p class="text-sm text-ink/70">{$t('footer.note')}</p>

@@ -1,8 +1,29 @@
+import { base } from '$app/paths';
+
 export const supportedLocales = ['en', 'ru', 'es'] as const;
 export type SupportedLocale = (typeof supportedLocales)[number];
 
 export const defaultLocale = 'en' satisfies SupportedLocale;
 export const siteOrigin = 'https://gelyrix.com';
+export const githubPagesOrigin = 'https://t1p.github.io';
+export const githubPagesBasePath = '/gelyrix.com';
+export const isGithubPagesDemo = process.env.BUILD_TARGET === 'github-pages';
+
+export const stripBasePath = (pathname: string, basePath = githubPagesBasePath): string => {
+	if (!basePath || basePath === '/') {
+		return pathname || '/';
+	}
+
+	if (pathname === basePath) {
+		return '/';
+	}
+
+	if (pathname.startsWith(`${basePath}/`)) {
+		return pathname.slice(basePath.length) || '/';
+	}
+
+	return pathname || '/';
+};
 
 const localeSet = new Set<string>(supportedLocales);
 
@@ -57,8 +78,10 @@ export const localizeHref = (href: string | undefined, locale: string | null | u
 
 	const [pathWithSearch, hash = ''] = href.split('#');
 	const [path, search = ''] = pathWithSearch.split('?');
+	const normalizedPath = stripBasePath(path || '/');
 
-	return getLocalizedPath(path || '/', normalizeLocale(locale), search ? `?${search}` : '', hash ? `#${hash}` : '');
+	const localizedPath = getLocalizedPath(normalizedPath, normalizeLocale(locale), search ? `?${search}` : '', hash ? `#${hash}` : '');
+	return `${base}${localizedPath}`;
 };
 
 export const getLocalizedUrl = (origin: string, pathname: string, locale: SupportedLocale) => {
