@@ -30,7 +30,7 @@
 />
 
 <section class="section">
-	<div class="page-container">
+	<div class="page-container grid gap-6">
 		<div class="surface">
 			<ul class="grid gap-4 text-sm leading-6 text-ink/70">
 				{#each content.items as item}
@@ -39,6 +39,14 @@
 						<span>{item}</span>
 					</li>
 				{/each}
+			</ul>
+		</div>
+		<div class="card">
+			<h2 class="text-xl font-semibold">{isRu ? 'Дополнительные юридические заметки v2' : 'Additional legal notes v2'}</h2>
+			<ul class="mt-4 grid gap-3 text-sm text-ink/70">
+				<li>{isRu ? 'GLRX не является инвестиционным инструментом.' : 'GLRX is not an investment instrument.'}</li>
+				<li>{isRu ? 'Крионика и нейросохранение сохраняют экспериментальный статус, без гарантии восстановления.' : 'Cryonics and neurosafekeeping remain experimental, with no restoration guarantee.'}</li>
+				<li>{isRu ? 'По вопросам privacy и обработки контактов используйте каналы на странице Contacts.' : 'For privacy and contact-data handling notes, use the channels listed on the Contacts page.'}</li>
 			</ul>
 		</div>
 	</div>

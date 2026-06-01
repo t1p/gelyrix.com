@@ -54,7 +54,11 @@
 </section>
 
 <section class="section pt-0">
-	<div class="page-container">
+	<div class="page-container grid gap-6">
+		<div class="rounded-lg border border-amber-200 bg-amber-50 p-5 text-ink">
+			<h2 class="text-lg font-semibold">{isRu ? 'DAO / GLRX дисклеймер' : 'DAO / GLRX disclaimer'}</h2>
+			<p class="mt-2 text-sm leading-6">{isRu ? 'GLRX не является инвестиционным инструментом. Участие сообщества и DAO относится к поддержке исследований и инфраструктуры, без обещаний доходности.' : 'GLRX is not an investment instrument. Community and DAO participation supports research and infrastructure without yield promises.'}</p>
+		</div>
 		<div class="grid gap-6 rounded-lg bg-ink p-8 text-white md:grid-cols-[1fr_auto] md:items-center">
 			<div>
 				<h2 class="text-2xl font-semibold">{isRu ? 'Поддержать измеримый этап' : 'Fund a measurable milestone'}</h2>

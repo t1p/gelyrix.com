@@ -1,38 +1,101 @@
-# sv
+# Gelyrix.com
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Сайт проекта Gelyrix на SvelteKit с фокусом на RU/EN MVP-контент, юридически корректные дисклеймеры и прозрачную структуру страниц для направления longevity/cryonics.
 
-## Creating a project
+## Описание проекта
 
-If you're seeing this, you've probably already done this step. Congrats!
+Gelyrix.com — это контентно-ориентированный сайт с локализацией, где объединены:
+- публичное описание проекта и миссии;
+- материалы по научно-исследовательному контуру (Lab);
+- страницы для сообщества и партнёров;
+- централизованные юридические и этические оговорки.
 
-```sh
-# create a new project in the current directory
-npx sv create
+Актуальный этап требований зафиксирован в v2 (канонический документ: `versions/v0.3.md`).
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Технический стек
 
-## Developing
+- SvelteKit 2.x
+- Svelte 5
+- TailwindCSS 3
+- TypeScript 5
+- Vite 7
+- Appwrite (auth/database/storage)
+- PM2 + nginx для серверного деплоя Node adapter
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Структура репозитория
 
-```sh
+- `src/routes/` — страницы и маршруты сайта.
+- `src/lib/` — общие модули, локализация, контент, Appwrite-клиенты.
+- `static/` — статические ассеты.
+- `versions/` — версионируемые документы требований/контента (`v0.1.md`, `v0.2.md`, `v0.3.md`).
+- `docs/` — проектная документация, планы, gap-analysis.
+- `memory-bank/` — контекст проекта, решения и прогресс.
+- `nginx/` — конфигурации reverse proxy.
+- `ecosystem.config.js` — конфигурация PM2.
+
+## Ключевые страницы сайта (v2)
+
+- `/` — главная.
+- `/about` — о проекте.
+- `/how-it-works` — как это работает.
+- `/services` — направления и сервисы.
+- `/lab` — лабораторные материалы (минимум: 1 протокол + 1 публичный отчёт).
+- `/transparency` — прозрачность.
+- `/blog` — публикации.
+- `/faq` — часто задаваемые вопросы.
+- `/investors` — сообщество / участие / DAO/GLRX дисклеймер.
+- `/contacts` — контакты.
+- `/legal` — юридические и этические оговорки.
+
+## Документы v2
+
+- `versions/v0.3.md` — канонический снимок требований (ТЗ v2).
+- `docs/gelyrix-v2-implementation-plan.md` — утверждённая последовательность реализации v2.
+- `docs/gelyrix-v2-gap-analysis.md` — матрица соответствия страниц и требований.
+
+## Команды разработки, проверки и сборки
+
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
+npm run check
 npm run build
+npm run preview
+npm run start
 ```
 
-You can preview the production build with `npm run preview`.
+Кратко:
+- `npm run dev` — локальная разработка;
+- `npm run check` — проверка типов Svelte/TypeScript;
+- `npm run build` — production-сборка;
+- `npm run preview` — локальный просмотр production-сборки;
+- `npm run start` — запуск Node adapter-сборки (используется в PM2).
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Деплой
+
+### Вариант 1: GitHub Pages ветка
+
+В проекте рабочая ветка релизного потока указана как `origin/gh-pages` (см. план v2). Используйте принятый в команде процесс публикации этой ветки.
+
+### Вариант 2: PM2 + nginx
+
+1. Собрать проект:
+   ```bash
+   npm run build
+   ```
+2. Запустить/обновить процесс PM2:
+   ```bash
+   pm2 start ecosystem.config.js --env production
+   ```
+   или
+   ```bash
+   pm2 reload ecosystem.config.js --env production
+   ```
+3. Применить nginx-конфигурацию из `nginx/gelyrix.com.conf` и перезагрузить nginx.
+
+## Важные ограничения контента v2
+
+- RU/EN — обязательный объём MVP для ключевых страниц и legal-блоков.
+- Обязательная формулировка: **GLRX не является инвестиционным инструментом**.
+- Для Lab обязателен минимальный публичный контент: 1 протокол эксперимента и 1 публичный отчёт.
+- Используется публично безопасная географическая формулировка: «Россия, Грузия, Черногория и другие локации».

@@ -92,7 +92,7 @@ export const homeContent = {
 			{
 				kicker: '05',
 				title: 'Партнерская сеть хранилищ',
-				text: 'Россия, Грузия, Черногория, ДНР и новые локальные точки с едиными стандартами запуска.'
+				text: 'Россия, Грузия, Черногория и другие локации с едиными стандартами запуска.'
 			},
 			{
 				kicker: '06',
@@ -173,7 +173,7 @@ export const homeContent = {
 			{
 				kicker: '05',
 				title: 'Partner storage network',
-				text: 'Russia, Georgia, Montenegro, DPR, and future local hubs with shared launch standards.'
+				text: 'Russia, Georgia, Montenegro, and other locations with shared launch standards.'
 			},
 			{
 				kicker: '06',
@@ -446,7 +446,7 @@ export const pageContent = {
 				{
 					title: 'Сеть хранилищ Gelyrix',
 					text: 'Партнерская сеть нужна, чтобы сделать доступное криосохранение ближе к месту события и снизить время логистики.',
-					points: ['Россия, Грузия, Черногория, ДНР как первый контур', 'Локальные операторы и региональные координаторы', 'Единые протоколы, криомодули и мониторинг']
+					points: ['Россия, Грузия, Черногория и другие локации как первый контур', 'Локальные операторы и региональные координаторы', 'Единые протоколы, криомодули и мониторинг']
 				},
 				{
 					title: 'Путь клиента',
@@ -482,7 +482,7 @@ export const pageContent = {
 				{
 					title: 'Gelyrix storage network',
 					text: 'The partner network makes preservation more accessible near the event location and reduces logistics time.',
-					points: ['Russia, Georgia, Montenegro, DPR as the first contour', 'Local operators and regional coordinators', 'Unified protocols, cryomodules, and monitoring']
+					points: ['Russia, Georgia, Montenegro, and other locations as the first contour', 'Local operators and regional coordinators', 'Unified protocols, cryomodules, and monitoring']
 				},
 				{
 					title: 'Client journey',
@@ -558,9 +558,9 @@ export const servicesContent = {
 			},
 			{
 				kicker: 'Нейро',
-				title: 'Нейросохранение',
-				text: 'Экспериментальные программы сохранения мозга, связей и контекстных данных в связке с Aicoda.',
-				points: ['Мозг и ликворная перфузия', 'Цифровой бэкап контекста', 'Этический и правовой контроль']
+				title: 'Нейросохранение и BioArchive',
+				text: 'Экспериментальные программы нейросохранения и BioArchive: сохранение мозга, связей и контекстных данных в связке с Aicoda.',
+				points: ['Мозг и ликворная перфузия', 'BioArchive для долгосрочного хранения нейроданных', 'Цифровой бэкап контекста', 'Этический и правовой контроль']
 			},
 			{
 				kicker: 'Сеть',
@@ -604,9 +604,9 @@ export const servicesContent = {
 			},
 			{
 				kicker: 'Neuro',
-				title: 'Neurosafekeeping',
-				text: 'Experimental programs for preserving the brain, neural connections, and contextual data with Aicoda.',
-				points: ['Brain and CSF perfusion', 'Digital context backup', 'Ethical and legal control']
+				title: 'Neurosafekeeping and BioArchive',
+				text: 'Experimental neurosafekeeping and BioArchive programs for preserving the brain, neural connections, and contextual data with Aicoda.',
+				points: ['Brain and CSF perfusion', 'BioArchive for long-term neural data preservation', 'Digital context backup', 'Ethical and legal control']
 			},
 			{
 				kicker: 'Network',

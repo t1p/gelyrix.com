@@ -54,7 +54,22 @@
 </section>
 
 <section class="section pt-0">
-	<div class="page-container">
+	<div class="page-container grid gap-6">
+		<div class="card">
+			<h2 class="text-2xl font-semibold">{isRu ? 'Публичные материалы лаборатории (MVP)' : 'Public lab materials (MVP)'}</h2>
+			<div class="mt-5 grid gap-4 md:grid-cols-2">
+				<article class="rounded-lg border border-mist bg-white/70 p-4">
+					<div class="text-xs font-semibold uppercase text-evergreen">{isRu ? 'Протокол эксперимента' : 'Experiment protocol'}</div>
+					<h3 class="mt-2 text-lg font-semibold">{isRu ? 'GLX-LAB-001: Витрификация биообразца v1.0' : 'GLX-LAB-001: Biosample vitrification v1.0'}</h3>
+					<p class="mt-2 text-sm text-ink/70">{isRu ? 'Пошаговый публичный протокол для BioSample с контрольными точками качества и рисков.' : 'Step-by-step public BioSample protocol with quality and risk checkpoints.'}</p>
+				</article>
+				<article class="rounded-lg border border-mist bg-white/70 p-4">
+					<div class="text-xs font-semibold uppercase text-evergreen">{isRu ? 'Публичный отчёт' : 'Public report'}</div>
+					<h3 class="mt-2 text-lg font-semibold">{isRu ? 'GLX-REP-001: Отчёт по стабильности хранения Q2' : 'GLX-REP-001: Q2 storage stability report'}</h3>
+					<p class="mt-2 text-sm text-ink/70">{isRu ? 'Публичная сводка по мониторингу, отклонениям и действиям по корректировке в контуре Lab.' : 'Public summary of monitoring, deviations, and corrective actions within the Lab track.'}</p>
+				</article>
+			</div>
+		</div>
 		<div class="grid gap-6 rounded-lg bg-ink p-8 text-white md:grid-cols-[1fr_auto] md:items-center">
 			<div>
 				<h2 class="text-2xl font-semibold">{isRu ? 'Предложить эксперимент' : 'Propose an experiment'}</h2>
