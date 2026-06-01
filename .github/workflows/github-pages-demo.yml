@@ -35,6 +35,19 @@ jobs:
       - name: Build static demo
         run: npm run build
 
+      - name: Verify static output
+        run: |
+          test -f build/index.html
+          test -f build/services/index.html
+          test -f build/lab/index.html
+          test -f build/investors/index.html
+          test -f build/legal/index.html
+          test -f build/transparency/index.html
+          test -f build/sitemap.xml
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
