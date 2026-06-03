@@ -3,241 +3,193 @@
   <url>
     <loc>https://t1p.github.io/gelyrix.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/about" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/about</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/about" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/about" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/how-it-works</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/how-it-works" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/how-it-works" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/how-it-works</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/how-it-works</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/how-it-works" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/how-it-works</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/how-it-works" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/how-it-works" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/services" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/services" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/services" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/services</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/services" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/services</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/services" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/services" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/services" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/lab</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/lab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/lab" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/lab" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/lab</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/lab</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/lab" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/lab" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/lab</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/lab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/lab" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/lab" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/transparency</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/transparency" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/transparency" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/transparency" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/transparency</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/transparency</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/transparency" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/transparency" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/transparency</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/transparency" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/transparency" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/transparency" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/investors</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/investors" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/investors" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/investors" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/investors</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/investors</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/investors" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/investors" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/investors</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/investors" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/investors" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/investors" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/faq</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/faq" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/faq" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/faq" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/faq</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/faq</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/faq" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/faq" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/faq" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/faq" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/contacts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/contacts" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/contacts" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/contacts" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/contacts</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/contacts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/contacts" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/contacts" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/contacts</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/contacts" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/contacts" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/contacts" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/legal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/legal" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/legal" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/legal" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/legal</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/legal</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/legal" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/legal" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/legal</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/legal" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/legal" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/legal" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog/what-is-cryonics</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/what-is-cryonics" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/what-is-cryonics</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog/what-is-cryonics</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/what-is-cryonics</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/what-is-cryonics" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/what-is-cryonics" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog/vitrification-facts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/vitrification-facts" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/vitrification-facts</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog/vitrification-facts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/vitrification-facts</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/vitrification-facts" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/vitrification-facts" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog/functional-reversibility</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/functional-reversibility" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/functional-reversibility</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog/functional-reversibility</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/functional-reversibility</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/functional-reversibility" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/functional-reversibility" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog/neurosafekeeping</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/neurosafekeeping" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/neurosafekeeping</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog/neurosafekeeping</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/neurosafekeeping</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/neurosafekeeping" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/neurosafekeeping" />
   </url>
   <url>
     <loc>https://t1p.github.io/gelyrix.com/blog/storage-network</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/storage-network" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
   </url>
   <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/storage-network</loc>
+    <loc>https://t1p.github.io/gelyrix.com/ru/blog/storage-network</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
-  </url>
-  <url>
-    <loc>https://t1p.github.io/gelyrix.com/blog/storage-network</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://t1p.github.io/gelyrix.com/ru/blog/storage-network" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://t1p.github.io/gelyrix.com/blog/storage-network" />
   </url>
 </urlset>
