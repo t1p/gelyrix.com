@@ -1,0 +1,19 @@
+HTTP/2 404 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+access-control-allow-origin: *
+etag: "6a2029bb-63b"
+x-proxy-cache: MISS
+x-github-request-id: AAD6:50934:663D34C:67A8AD0:6A203174
+accept-ranges: bytes
+age: 0
+date: Wed, 03 Jun 2026 13:51:48 GMT
+via: 1.1 varnish
+x-served-by: cache-fra-eddf8230101-FRA
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1780494709.561200,VS0,VE109
+vary: Accept-Encoding
+x-fastly-request-id: 8e7546db01c9d4d6e2a62dc9c6a00ebc74681ae1
+content-length: 1595
+

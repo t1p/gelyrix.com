@@ -21,7 +21,7 @@ const staticEntries = [
 ];
 
 const localeEntries = isGithubPagesDemo
-	? []
+	? ['/ru']
 	: ['ru', 'es'].flatMap((locale) =>
 			staticEntries
 				.filter((entry) => entry !== '/sitemap.xml')
