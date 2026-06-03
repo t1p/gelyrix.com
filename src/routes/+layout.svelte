@@ -17,7 +17,9 @@
 
 	let { data, children } = $props();
 
-	untrack(() => setLocale(data.locale ?? defaultLocale));
+	if (!isGithubPagesDemo || !browser) {
+		untrack(() => setLocale(data.locale ?? defaultLocale));
+	}
 
 	const primaryNavItems = [
 		{ href: '/', label: 'nav.home' },
@@ -48,16 +50,20 @@
 		});
 	};
 
-	const activeLocale = () => data.locale ?? defaultLocale;
+	const activeLocale = () => (isGithubPagesDemo ? ($locale ?? defaultLocale) : (data.locale ?? defaultLocale));
 	const localizedHref = (href: string) => localizeHref(href, activeLocale());
 	const withBaseAsset = (assetPath: string) => `${base}${assetPath}`;
-	const visibleLocales: readonly SupportedLocale[] = isGithubPagesDemo ? [defaultLocale] : supportedLocales;
+	const visibleLocales: readonly SupportedLocale[] = supportedLocales;
 	const localizedCurrentHref = (nextLocale: SupportedLocale) => {
 		const search = browser ? $page.url.search : '';
 		return localizeHref(`${$page.url.pathname}${search}`, nextLocale);
 	};
 
-	const changeLocale = (nextLocale: SupportedLocale) => {
+	const changeLocale = (event: MouseEvent, nextLocale: SupportedLocale) => {
+		if (isGithubPagesDemo) {
+			event.preventDefault();
+		}
+
 		setLocale(nextLocale);
 		closeDropdowns();
 	};
@@ -88,8 +94,11 @@
 
 	$effect(() => {
 		if (browser) {
-			setLocale(data.locale ?? defaultLocale);
-			document.documentElement.lang = data.locale ?? defaultLocale;
+			if (!isGithubPagesDemo) {
+				setLocale(data.locale ?? defaultLocale);
+			}
+
+			document.documentElement.lang = $locale ?? data.locale ?? defaultLocale;
 		}
 	});
 </script>
@@ -151,7 +160,7 @@
 							<a
 								class={`rounded-md px-3 py-2 text-left text-xs font-semibold ${$locale === option ? 'bg-evergreen text-white' : 'text-ink/70 hover:bg-mist'}`}
 								href={localizedCurrentHref(option)}
-								onclick={() => changeLocale(option)}
+								onclick={(event) => changeLocale(event, option)}
 							>
 								{option.toUpperCase()}
 							</a>
@@ -172,7 +181,7 @@
 						<div class="mt-2 flex items-center gap-2 text-xs font-semibold text-ink/50">
 							{$t('common.language')}:
 							{#each visibleLocales as option}
-								<a class="rounded-md px-2 py-1 text-ink/60" href={localizedCurrentHref(option)} onclick={() => changeLocale(option)}>
+								<a class="rounded-md px-2 py-1 text-ink/60" href={localizedCurrentHref(option)} onclick={(event) => changeLocale(event, option)}>
 									{option.toUpperCase()}
 								</a>
 							{/each}
