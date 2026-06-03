@@ -53,7 +53,7 @@
 	const activeLocale = () => (isGithubPagesDemo ? ($locale ?? defaultLocale) : (data.locale ?? defaultLocale));
 	const localizedHref = (href: string) => localizeHref(href, activeLocale());
 	const withBaseAsset = (assetPath: string) => `${base}${assetPath}`;
-	const visibleLocales: readonly SupportedLocale[] = supportedLocales;
+	const visibleLocales: readonly SupportedLocale[] = isGithubPagesDemo ? [defaultLocale, 'ru'] : supportedLocales;
 	const localizedCurrentHref = (nextLocale: SupportedLocale) => {
 		const search = browser ? $page.url.search : '';
 		return localizeHref(`${$page.url.pathname}${search}`, nextLocale);

@@ -15,6 +15,7 @@ import type { RequestHandler } from './$types';
 export const prerender = true;
 
 const sitemapOrigin = isGithubPagesDemo ? `${githubPagesOrigin}${githubPagesBasePath}` : siteOrigin;
+const sitemapLocales: readonly SupportedLocale[] = isGithubPagesDemo ? [defaultLocale, 'ru'] : supportedLocales;
 
 const staticPaths = [
 	'/',
@@ -54,7 +55,7 @@ const getArticlePaths = async () => {
 };
 
 const renderAlternateLinks = (path: string) =>
-	((isGithubPagesDemo ? [defaultLocale] : supportedLocales) as readonly SupportedLocale[])
+	sitemapLocales
 		.map((locale) => {
 			const href = `${sitemapOrigin}${getLocalizedPath(path, locale)}`;
 			return `    <xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml(href)}" />`;
@@ -74,7 +75,7 @@ ${renderAlternateLinks(path)}
 
 export const GET: RequestHandler = async () => {
 	const paths = [...staticPaths, ...(await getArticlePaths())];
-	const urls = paths.flatMap((path) => supportedLocales.map((locale) => renderUrl(path, locale))).join('\n');
+	const urls = paths.flatMap((path) => sitemapLocales.map((locale) => renderUrl(path, locale))).join('\n');
 
 	return new Response(`<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">

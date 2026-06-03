@@ -54,7 +54,8 @@ export const stripLocaleFromPath = (pathname: string): string => {
 export const getLocalizedPath = (pathname: string, locale: SupportedLocale, search = '', hash = '') => {
 	const cleanPath = stripLocaleFromPath(pathname);
 	if (isGithubPagesDemo) {
-		return `${cleanPath}${search}${hash}`;
+		const localizedPath = locale === defaultLocale ? cleanPath : `/${locale}${cleanPath === '/' ? '' : cleanPath}`;
+		return `${localizedPath}${search}${hash}`;
 	}
 
 	const localizedPath = locale === defaultLocale ? cleanPath : `/${locale}${cleanPath === '/' ? '' : cleanPath}`;

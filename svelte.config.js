@@ -21,7 +21,9 @@ const staticEntries = [
 ];
 
 const localeEntries = isGithubPagesDemo
-	? ['/ru']
+	? staticEntries
+			.filter((entry) => entry !== '/sitemap.xml')
+			.map((entry) => (entry === '/' ? '/ru' : `/ru${entry}`))
 	: ['ru', 'es'].flatMap((locale) =>
 			staticEntries
 				.filter((entry) => entry !== '/sitemap.xml')
@@ -36,7 +38,7 @@ const articleSlugs = [
 	'storage-network'
 ];
 const blogEntries = isGithubPagesDemo
-	? articleSlugs.map((slug) => `/blog/${slug}`)
+	? articleSlugs.flatMap((slug) => [`/blog/${slug}`, `/ru/blog/${slug}`])
 	: articleSlugs.flatMap((slug) => [`/blog/${slug}`, `/ru/blog/${slug}`, `/es/blog/${slug}`]);
 
 const prerenderEntries = Array.from(new Set([...staticEntries, ...localeEntries, ...blogEntries]));
