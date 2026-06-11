@@ -638,6 +638,12 @@ export const investorsContent = {
 	},
 };
 
+export type ContactMethod = {
+	label: string;
+	value: string;
+	href: string;
+};
+
 export type ContactsContent = {
 	ru: {
 		metaTitle: string;
@@ -647,7 +653,7 @@ export type ContactsContent = {
 		lead: string;
 		image: string;
 		email: string;
-		methods: string[];
+		methods: ContactMethod[];
 		consultationTitle: string;
 		communityTitle: string;
 		name: string;
@@ -668,7 +674,7 @@ export type ContactsContent = {
 		lead: string;
 		image: string;
 		email: string;
-		methods: string[];
+		methods: ContactMethod[];
 		consultationTitle: string;
 		communityTitle: string;
 		name: string;
@@ -694,8 +700,13 @@ export const contactsContent: ContactsContent = {
 		image: images.contact,
 		email: 'main@gelyrix.com',
 		methods: [
-			'Юридический статус: Некоммерческое объединение — https://monte.wiki/ru/GELYRIX',
-			'Telegram: @CryomBot — https://t.me/CryomBot'
+			{ label: 'Email', value: 'main@gelyrix.com', href: 'mailto:main@gelyrix.com' },
+			{ label: 'Telegram', value: '@CryomBot', href: 'https://t.me/CryomBot' },
+			{
+				label: 'Юридический статус',
+				value: 'Некоммерческое объединение',
+				href: 'https://monte.wiki/ru/GELYRIX'
+			}
 		],
 		consultationTitle: 'Обсудить случай сохранения',
 		communityTitle: 'Задать вопрос в Telegram',
@@ -720,8 +731,13 @@ export const contactsContent: ContactsContent = {
 		image: images.contact,
 		email: 'main@gelyrix.com',
 		methods: [
-			'Legal status: Non-profit association — https://monte.wiki/ru/GELYRIX',
-			'Telegram: @CryomBot — https://t.me/CryomBot'
+			{ label: 'Email', value: 'main@gelyrix.com', href: 'mailto:main@gelyrix.com' },
+			{ label: 'Telegram', value: '@CryomBot', href: 'https://t.me/CryomBot' },
+			{
+				label: 'Legal status',
+				value: 'Non-profit association',
+				href: 'https://monte.wiki/ru/GELYRIX'
+			}
 		],
 		consultationTitle: 'Discuss preservation case',
 		communityTitle: 'Ask a question in Telegram',

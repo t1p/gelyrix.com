@@ -3,14 +3,13 @@
 	import { locale } from 'svelte-i18n';
 	import PageHero from '$lib/components/PageHero.svelte';
 	import { getSeoForPath, type AdminLocale } from '$lib/adminContent';
-	import { contactsContent, normalizeLocale, pick } from '$lib/content';
+	import { contactsContent, normalizeLocale, pick, type ContactMethod } from '$lib/content';
 
 	$: content = pick(contactsContent, $locale);
 	$: currentLocale = normalizeLocale($locale) as AdminLocale;
 	$: isRu = currentLocale === 'ru';
 	$: adminSeo = getSeoForPath($page.data.adminContent, '/contacts', currentLocale);
-	$: telegramUrl = 'https://t.me/CryomBot';
-	$: legalStatusUrl = 'https://monte.wiki/ru/GELYRIX';
+	$: contactMethods = content.methods as ContactMethod[];
 </script>
 
 <svelte:head>
@@ -36,27 +35,14 @@
 		<aside class="surface">
 			<h2 class="text-xl font-semibold">{isRu ? 'Способы связи' : 'Contact methods'}</h2>
 			<ul class="mt-5 grid gap-3 text-sm leading-6 text-ink/70">
-				<li class="flex gap-3">
-					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
-					<a class="font-semibold text-evergreen hover:text-tide" href={`mailto:${content.email}`}>
-						{content.email}
-					</a>
-				</li>
-				<li class="flex gap-3">
-					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
-					<a
-						class="font-semibold text-evergreen hover:text-tide"
-						href={legalStatusUrl}
-						target="_blank"
-						rel="noreferrer"
-					>
-						{content.methods[0]}
-					</a>
-				</li>
-				<li class="flex gap-3">
-					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
-					<a class="font-semibold text-evergreen hover:text-tide" href={telegramUrl} target="_blank" rel="noreferrer">@CryomBot</a>
-				</li>
+				{#each contactMethods as method}
+					<li class="flex gap-3">
+						<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
+						<span>
+							{method.label}: <a class="font-semibold text-evergreen hover:text-tide" href={method.href} target="_blank" rel="noreferrer">{method.value}</a>
+						</span>
+					</li>
+				{/each}
 			</ul>
 		</aside>
 
@@ -83,7 +69,7 @@
 				<textarea class="input mt-2 min-h-[120px]" id="consultation-message" name="message" required></textarea>
 				<label class="sr-only" for="consultation-company">{content.spam}</label>
 				<input class="hidden" id="consultation-company" name="company" tabindex="-1" autocomplete="off" />
-				<a class="btn-primary mt-5 inline-flex" href={telegramUrl} target="_blank" rel="noreferrer">{content.submit}</a>
+				<a class="btn-primary mt-5 inline-flex" href="https://t.me/CryomBot" target="_blank" rel="noreferrer">{content.submit}</a>
 				<p class="mt-4 text-sm text-ink/60">{content.disclaimer}</p>
 			</form>
 
@@ -117,7 +103,7 @@
 				<textarea class="input mt-2 min-h-[120px]" id="community-message" name="message" required></textarea>
 				<label class="sr-only" for="community-company">{content.spam}</label>
 				<input class="hidden" id="community-company" name="company" tabindex="-1" autocomplete="off" />
-				<a class="btn-primary mt-5 inline-flex" href={telegramUrl} target="_blank" rel="noreferrer">{content.submit}</a>
+				<a class="btn-primary mt-5 inline-flex" href="https://t.me/CryomBot" target="_blank" rel="noreferrer">{content.submit}</a>
 				<p class="mt-4 text-sm text-ink/60">{content.disclaimer}</p>
 			</form>
 		</div>
