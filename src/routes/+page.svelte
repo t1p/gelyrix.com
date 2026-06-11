@@ -140,10 +140,16 @@
 			<h2 class="section-title">{content.teamTitle}</h2>
 			<p class="section-lead">{content.teamText}</p>
 		</div>
-		<div class="grid gap-3 sm:grid-cols-3">
-			<div class="rounded-lg border border-mist bg-white/80 p-5 text-center font-semibold">CryoDAO</div>
-			<div class="rounded-lg border border-mist bg-white/80 p-5 text-center font-semibold">Aicoda</div>
-			<div class="rounded-lg border border-mist bg-white/80 p-5 text-center font-semibold">Gelyrix Network</div>
+		<div class="grid gap-3">
+			<div class="rounded-lg border border-mist bg-white/80 p-5">
+				<div class="text-xs font-semibold uppercase text-evergreen">For partners</div>
+				<p class="mt-3 text-sm leading-6 text-ink/70">
+					Gelyrix is open to collaboration with laboratories, veterinary clinics, biobanks, storage operators, engineers, donors, and community/DAO contributors.
+				</p>
+				<p class="mt-3 text-sm leading-6 text-ink/70">
+					Current stage: working public draft, laboratory and transparency roadmap, BioSample/BioArchive directions, and partner infrastructure discussion.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>

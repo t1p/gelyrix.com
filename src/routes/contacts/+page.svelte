@@ -5,22 +5,11 @@
 	import { getSeoForPath, type AdminLocale } from '$lib/adminContent';
 	import { contactsContent, normalizeLocale, pick } from '$lib/content';
 
-	let consultationSent = false;
-	let communitySent = false;
-
 	$: content = pick(contactsContent, $locale);
 	$: currentLocale = normalizeLocale($locale) as AdminLocale;
 	$: isRu = currentLocale === 'ru';
 	$: adminSeo = getSeoForPath($page.data.adminContent, '/contacts', currentLocale);
-
-	const handleSubmit = (event: SubmitEvent, form: 'consultation' | 'community') => {
-		event.preventDefault();
-		if (form === 'consultation') {
-			consultationSent = true;
-			return;
-		}
-		communitySent = true;
-	};
+	$: telegramUrl = 'https://t.me/CryomBot';
 </script>
 
 <svelte:head>
@@ -52,6 +41,10 @@
 						{content.email}
 					</a>
 				</li>
+				<li class="flex gap-3">
+					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
+					<a class="font-semibold text-evergreen hover:text-tide" href={telegramUrl}>@CryomBot</a>
+				</li>
 				{#each content.methods as item}
 					<li class="flex gap-3">
 						<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
@@ -62,7 +55,7 @@
 		</aside>
 
 		<div class="grid gap-6">
-			<form class="card" onsubmit={(event) => handleSubmit(event, 'consultation')}>
+			<form class="card">
 				<h2 class="text-xl font-semibold">{content.consultationTitle}</h2>
 				<div class="mt-5 grid gap-4 md:grid-cols-2">
 					<div>
@@ -84,13 +77,11 @@
 				<textarea class="input mt-2 min-h-[120px]" id="consultation-message" name="message" required></textarea>
 				<label class="sr-only" for="consultation-company">{content.spam}</label>
 				<input class="hidden" id="consultation-company" name="company" tabindex="-1" autocomplete="off" />
-				<button class="btn-primary mt-5" type="submit">{content.submit}</button>
-				{#if consultationSent}
-					<p class="mt-4 text-sm text-evergreen">{content.success}</p>
-				{/if}
+				<a class="btn-primary mt-5 inline-flex" href={telegramUrl} target="_blank" rel="noreferrer">{content.submit}</a>
+				<p class="mt-4 text-sm text-ink/60">{content.disclaimer}</p>
 			</form>
 
-			<form class="card" onsubmit={(event) => handleSubmit(event, 'community')}>
+			<form class="card">
 				<h2 class="text-xl font-semibold">{content.communityTitle}</h2>
 				<div class="mt-5 grid gap-4 md:grid-cols-2">
 					<div>
@@ -120,10 +111,8 @@
 				<textarea class="input mt-2 min-h-[120px]" id="community-message" name="message" required></textarea>
 				<label class="sr-only" for="community-company">{content.spam}</label>
 				<input class="hidden" id="community-company" name="company" tabindex="-1" autocomplete="off" />
-				<button class="btn-primary mt-5" type="submit">{content.submit}</button>
-				{#if communitySent}
-					<p class="mt-4 text-sm text-evergreen">{content.success}</p>
-				{/if}
+				<a class="btn-primary mt-5 inline-flex" href={telegramUrl} target="_blank" rel="noreferrer">{content.submit}</a>
+				<p class="mt-4 text-sm text-ink/60">{content.disclaimer}</p>
 			</form>
 		</div>
 	</div>

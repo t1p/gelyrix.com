@@ -55,17 +55,18 @@
 <section class="full-bleed-band section">
 	<div class="page-container grid gap-8 lg:grid-cols-[1fr_1fr]">
 		<div>
-			<h2 class="section-title">{isRu ? 'Будущий дашборд мониторинга' : 'Future dashboard'}</h2>
+			<h2 class="section-title">{isRu ? 'Дорожная карта мониторинга' : 'Monitoring roadmap'}</h2>
 			<p class="section-lead">
 				{isRu
-					? 'Архитектура сайта оставляет место для API-дашборда со статусом дьюаров, событиями и проверками партнерских локаций.'
-					: 'The architecture leaves room for an API-backed dashboard with dewar status, events, and partner location checks.'}
+					? 'Архитектура сайта оставляет место для будущего API-дашборда, но сейчас мы показываем только публичные резюме и статусы в подготовке.'
+					: 'The site architecture leaves room for a future API-backed dashboard, but for now we show only public summaries and items in preparation.'}
 			</p>
 		</div>
 		<div class="grid gap-3">
-			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Dewar status: planned</div>
-			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Sample events: planned</div>
-			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Partner audits: planned</div>
+			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Dewar status: planned / in preparation</div>
+			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Sample events: planned / in preparation</div>
+			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Partner audits: planned / in preparation</div>
+			<div class="rounded-lg border border-mist bg-white/80 p-4 text-sm text-ink/70">Public summary / публичное резюме</div>
 		</div>
 	</div>
 </section>

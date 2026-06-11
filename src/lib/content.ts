@@ -63,7 +63,7 @@ export const homeContent = {
 		tagline: 'Жизнь продолжается, просто на паузе.',
 		actions: [
 			{ label: 'Хочу разобраться, что такое крионика', href: '/how-it-works', variant: 'primary' },
-			{ label: 'Обсудить криосохранение / нейросохранение', href: '/contacts', variant: 'secondary' }
+			{ label: 'Обсудить случай сохранения', href: 'https://t.me/CryomBot', variant: 'secondary' }
 		] satisfies ActionLink[],
 		summaryTitle: 'Gelyrix за 30 секунд',
 		summaryLead:
@@ -126,12 +126,12 @@ export const homeContent = {
 		],
 		articlesTitle: 'Популяризация крионики',
 		articlesLead: 'Материалы на запуск: база, мифы, научные ограничения и инфраструктура.',
-		teamTitle: 'Команда и партнеры',
+		teamTitle: 'Партнёрские направления',
 		teamText:
-			'Gelyrix открыт для биологов, инженеров, операторов инфраструктуры, волонтеров, доноров и партнерских организаций. Логотипы CryoDAO, Aicoda и локальных партнеров можно добавить по мере готовности.',
+			'Исследовательский, инфраструктурный и community-контуры развиваются по мере роста проекта. Партнёрства оформляются по мере развития проекта.',
 		ctaTitle: 'Есть вопрос или сценарий?',
 		ctaText: 'Опишите ситуацию: питомец, исследование, партнерская локация, криомодуль или участие в сообществе.',
-		ctaButton: 'Оставить запрос'
+		ctaButton: 'Задать вопрос в Telegram'
 	},
 	en: {
 		metaTitle: 'Gelyrix - cryopreservation and neurosafekeeping',
@@ -144,7 +144,7 @@ export const homeContent = {
 		tagline: 'Life continues, just on pause.',
 		actions: [
 			{ label: 'I want to understand cryonics', href: '/how-it-works', variant: 'primary' },
-			{ label: 'Discuss cryo / neuro preservation', href: '/contacts', variant: 'secondary' }
+			{ label: 'Discuss preservation case', href: 'https://t.me/CryomBot', variant: 'secondary' }
 		] satisfies ActionLink[],
 		summaryTitle: 'Gelyrix in 30 seconds',
 		summaryLead:
@@ -207,94 +207,13 @@ export const homeContent = {
 		],
 		articlesTitle: 'Cryonics education',
 		articlesLead: 'Launch materials: fundamentals, myths, scientific limits, and infrastructure.',
-		teamTitle: 'Team and partners',
+		teamTitle: 'Partner directions',
 		teamText:
-			'Gelyrix is open to biologists, engineers, infrastructure operators, volunteers, donors, and partner organizations. CryoDAO, Aicoda, and regional partner logos can be added when ready.',
+			'Research, infrastructure and community tracks evolve with the project. Partnerships are formed as the project develops.',
 		ctaTitle: 'Have a question or scenario?',
 		ctaText: 'Describe your case: a pet, a study, a partner site, a cryomodule, or community participation.',
-		ctaButton: 'Send a request'
+		ctaButton: 'Ask a question in Telegram'
 	},
-	es: {
-		metaTitle: 'Gelyrix - criopreservación y neurosalvaguarda',
-		metaDescription:
-			'Gelyrix es una iniciativa sin ánimo de lucro que desarrolla infraestructura de criopreservación, neurosalvaguarda, criomódulos e investigación abierta.',
-		eyebrow: 'Iniciativa criónica abierta',
-		title: 'Criopreservación y neurosalvaguarda con enfoque científico',
-		subtitle:
-			'Gelyrix construye infraestructura de criónica: protocolos experimentales, monitoreo, ubicaciones de almacenamiento asociadas y criolaboratorios modulares.',
-		tagline: 'La vida continúa, solo está en pausa.',
-		actions: [
-			{ label: 'Quiero entender la criónica', href: '/how-it-works', variant: 'primary' },
-			{ label: 'Hablar sobre crio / neuro preservación', href: '/contacts', variant: 'secondary' }
-		] satisfies ActionLink[],
-		summaryTitle: 'Gelyrix en 30 segundos',
-		summaryLead:
-			'No vendemos inmortalidad. Construimos infraestructura honesta para preservar biomateriales y comprobar qué puede llegar a ser reversible.',
-		summary: [
-			{
-				kicker: '01',
-				title: 'Crioconservación experimental',
-				text: 'Animales, órganos y tejidos se preservan mediante protocolos documentados con límites claros.'
-			},
-			{
-				kicker: '02',
-				title: 'Neurosalvaguarda y Aicoda',
-				text: 'Un foco específico en la preservación del cerebro, las conexiones neuronales y el contexto digital de la identidad.'
-			},
-			{
-				kicker: '03',
-				title: 'Monitoreo transparente',
-				text: 'El estado de los dewars, las muestras y los parámetros críticos debe ser auditable, no oculto.'
-			},
-			{
-				kicker: '04',
-				title: 'Experimentos de reversibilidad',
-				text: 'Nos centramos en la integridad funcional y estructural del tejido, no solo en una esperanza futura.'
-			},
-			{
-				kicker: '05',
-				title: 'Red de almacenamiento asociada',
-				text: 'Rusia, Georgia, Montenegro, RPD y futuros hubs locales con estándares compartidos de lanzamiento.'
-			},
-			{
-				kicker: '06',
-				title: 'Criomódulos',
-				text: 'Edificios modulares para criolaboratorios y sitios de almacenamiento para socios, laboratorios y clientes privados.'
-			}
-		] satisfies TextCard[],
-		stepsTitle: 'Cómo funciona la criónica',
-		stepsLead: 'El recorrido queda claro desde el inicio: preparación, crioprotocolo, almacenamiento y separación honesta de hipótesis futuras.',
-		steps: [
-			{ title: 'Preparación', text: 'Consulta, documentos, planificación del protocolo y logística.' },
-			{ title: 'Criopreservación', text: 'Enfriamiento, crioprotectores, perfusión y vitrificación cuando aplica.' },
-			{ title: 'Almacenamiento a largo plazo', text: 'Almacenamiento en dewars o infraestructura modular con monitoreo.' },
-			{ title: 'Restauración futura', text: 'Sigue siendo una hipótesis. Separamos evidencia y esperanza.' }
-		] satisfies TextCard[],
-		differenceTitle: 'Qué nos diferencia',
-		difference: [
-			'Foco en la reversibilidad real de tejidos y órganos.',
-			'Informes públicos, protocolos y hojas de ruta de experimentos.',
-			'Conexión entre criónica, neurosalvaguarda y respaldo digital de la mente.',
-			'Formato sin ánimo de lucro: participación mediante contribución, experiencia, infraestructura y comunidad.',
-			'Modelo de financiación abierta para estudios concretos y nuevas ubicaciones de almacenamiento.'
-		],
-		audienceTitle: 'Para quién es',
-		audience: [
-			'Dueños de mascotas',
-			'Personas que planifican criopreservación',
-			'Investigadores e ingenieros',
-			'Laboratorios, clínicas y operadores de almacenamiento',
-			'Inversores, donantes y comunidades DAO'
-		],
-		articlesTitle: 'Educación sobre criónica',
-		articlesLead: 'Materiales de lanzamiento: fundamentos, mitos, límites científicos e infraestructura.',
-		teamTitle: 'Equipo y socios',
-		teamText:
-			'Gelyrix está abierto a biólogos, ingenieros, operadores de infraestructura, voluntarios, donantes y organizaciones asociadas. Los logotipos de CryoDAO, Aicoda y socios regionales pueden añadirse cuando estén listos.',
-		ctaTitle: '¿Tienes una pregunta o un escenario?',
-		ctaText: 'Describe tu caso: una mascota, un estudio, una ubicación asociada, un criomódulo o participación comunitaria.',
-		ctaButton: 'Enviar solicitud'
-	}
 };
 
 export const pageContent = {
@@ -628,52 +547,6 @@ export const servicesContent = {
 			}
 		] satisfies TextCard[]
 	},
-	es: {
-		metaTitle: 'Servicios y líneas de Gelyrix',
-		metaDescription: 'Criopreservación de mascotas, órganos y tejidos, neurosalvaguarda, red de almacenamiento, criomódulos y programas para socios.',
-		eyebrow: 'Servicios y líneas',
-		title: 'Escenarios prácticos y programas de investigación',
-		lead: 'Cada línea incluye restricciones, estatus legal y un siguiente paso claro.',
-		image: images.pet,
-		items: [
-			{
-				kicker: 'Mascotas',
-				title: 'Crioconservación animal',
-				text: 'Un escenario experimental para dueños de mascotas: consulta, preparación, protocolo, almacenamiento y comunicación regular.',
-				points: ['Para animales de compañía', 'Sin garantía de reanimación futura', 'Documentación del consentimiento del dueño']
-			},
-			{
-				kicker: 'Labs',
-				title: 'Órganos y tejidos',
-				text: 'Protocolos de investigación para grupos, clínicas y proyectos que necesitan comprobar la integridad de muestras.',
-				points: ['Perfusión y vitrificación', 'Marcadores de daño', 'Informes de experimentos']
-			},
-			{
-				kicker: 'Neuro',
-				title: 'Neurosalvaguarda',
-				text: 'Programas experimentales para preservar el cerebro, las conexiones neuronales y datos contextuales con Aicoda.',
-				points: ['Cerebro y perfusión de LCR', 'Respaldo digital de contexto', 'Control ético y legal']
-			},
-			{
-				kicker: 'Red',
-				title: 'Red de almacenamiento asociada',
-				text: 'Clínicas, laboratorios y emprendedores pueden conectarse como operadores locales, clínicas asociadas o coordinadores regionales.',
-				points: ['Metodología y protocolos', 'Soporte de lanzamiento', 'Mapa de ubicaciones y monitoreo']
-			},
-			{
-				kicker: 'Módulos',
-				title: 'Producción de criomódulos',
-				text: 'Edificios modulares para criolaboratorios y almacenamiento, desde un módulo inicial hasta un complejo de laboratorio y almacenamiento.',
-				points: ['Criomódulo de inicio', 'Configuraciones ampliadas', 'Para socios, laboratorios y clientes privados']
-			},
-			{
-				kicker: 'Investigación',
-				title: 'Programas con socios',
-				text: 'Experimentos conjuntos con laboratorios, universidades, DAOs e inversores que financian pruebas específicas.',
-				points: ['Plan experimental', 'Presupuesto y métricas', 'Informe abierto de resultados']
-			}
-		] satisfies TextCard[]
-	}
 };
 
 export const labContent = {
@@ -709,22 +582,6 @@ export const labContent = {
 		reporting: ['Short reports after experiment stages.', 'Preprints and community posts.', 'A roadmap with planned tests and limitations.'],
 		join: ['Scientists and engineers can propose methods or equipment.', 'DAOs and investors can fund a specific experiment.', 'Partner storage sites and cryomodules connect to shared monitoring.']
 	},
-	es: {
-		metaTitle: 'Laboratorio e investigación de Gelyrix',
-		metaDescription: 'Nuevos crioprotectores, perfusión, marcadores de integridad, informes y hoja de ruta de investigación de Gelyrix.',
-		eyebrow: 'Laboratorio',
-		title: 'Experimentos abiertos en lugar de promesas cerradas',
-		lead:
-			'El programa de investigación de Gelyrix existe para comprobar la calidad de la preservación, mejorar protocolos y publicar resultados comprensibles.',
-		image: images.lab,
-		areas: [
-			'Nuevos crioprotectores, incluidos medios relacionados con el LCR.',
-			'Protocolos de perfusión para tejidos, órganos y neurosalvaguarda.',
-			'Marcadores de integridad estructural y funcional.'
-		],
-		reporting: ['Informes breves después de etapas experimentales.', 'Preprints y publicaciones para la comunidad.', 'Hoja de ruta con pruebas planificadas y limitaciones.'],
-		join: ['Científicos e ingenieros pueden proponer métodos o equipos.', 'DAOs e inversores pueden financiar un experimento concreto.', 'Los sitios asociados y criomódulos se conectan al monitoreo compartido.']
-	}
 };
 
 export const transparencyContent = {
@@ -737,7 +594,7 @@ export const transparencyContent = {
 			'Крионика требует доверия, но доверие должно строиться на проверяемых данных, документах и понятной этике.',
 		image: images.infrastructure,
 		principles: ['Открытая отчетность по инфраструктуре и исследованиям.', 'Приоритизация безопасности биоматериалов.', 'Этичное обращение с телом, тканями, памятью и волей клиента.'],
-		monitoring: ['Контроль состояния дьюаров, образцов и критических параметров.', 'Планируемые дашборды и периодические отчеты.', 'Единые стандарты для партнерских хранилищ и криомодулей.'],
+		monitoring: ['Контроль состояния дьюаров, образцов и критических параметров.', 'Public summary / публичное резюме для карточек и отчётных заметок.', 'Единые стандарты для партнерских хранилищ и криомодулей.'],
 		legal: ['Статус услуги зависит от юрисдикции и типа биоматериала.', 'Документы и согласия оформляются до процедуры, когда это возможно.', 'Крионика и нейросохранение остаются экспериментальными методами без гарантии восстановления.']
 	},
 	en: {
@@ -749,21 +606,9 @@ export const transparencyContent = {
 			'Cryonics requires trust, but trust should be built on auditable data, documents, and clear ethics.',
 		image: images.infrastructure,
 		principles: ['Open reporting on infrastructure and research.', 'Safety-first handling of biomaterials.', 'Ethical handling of body, tissue, memory, and client will.'],
-		monitoring: ['Tracking dewars, samples, and critical parameters.', 'Planned dashboards and periodic reports.', 'Unified standards for partner storage sites and cryomodules.'],
+		monitoring: ['Tracking dewars, samples, and critical parameters.', 'Public summary / public summary cards and report notes.', 'Unified standards for partner storage sites and cryomodules.'],
 		legal: ['Service status depends on jurisdiction and biomaterial type.', 'Documents and consent are prepared before the procedure whenever possible.', 'Cryonics and neurosafekeeping remain experimental methods with no restoration guarantee.']
 	},
-	es: {
-		metaTitle: 'Transparencia y seguridad de Gelyrix',
-		metaDescription: 'Informes, monitoreo de dewars, ética de biomateriales, documentos y límites legales de la criónica.',
-		eyebrow: 'Transparencia',
-		title: 'Seguridad, monitoreo y límites honestos',
-		lead:
-			'La criónica requiere confianza, pero la confianza debe construirse sobre datos auditables, documentos y una ética clara.',
-		image: images.infrastructure,
-		principles: ['Informes abiertos sobre infraestructura e investigación.', 'Manejo de biomateriales con prioridad en seguridad.', 'Tratamiento ético del cuerpo, tejidos, memoria y voluntad del cliente.'],
-		monitoring: ['Seguimiento de dewars, muestras y parámetros críticos.', 'Dashboards planificados e informes periódicos.', 'Estándares unificados para sitios asociados y criomódulos.'],
-		legal: ['El estatus del servicio depende de la jurisdicción y del tipo de biomaterial.', 'Los documentos y consentimientos se preparan antes del procedimiento siempre que sea posible.', 'La criónica y la neurosalvaguarda siguen siendo métodos experimentales sin garantía de restauración.']
-	}
 };
 
 export const investorsContent = {
@@ -791,21 +636,54 @@ export const investorsContent = {
 		principles: ['Transparent budget and goals.', 'Open metrics and regular reports.', 'Ethical obligations to clients, participants, and future researchers.'],
 		focus: ['Laboratory research support.', 'Launch of new cryomodules.', 'Storage network expansion and local operator training.']
 	},
-	es: {
-		metaTitle: 'Inversores y comunidad de Gelyrix',
-		metaDescription: 'Donaciones, subvenciones, DAO, métricas abiertas y financiación para investigación, criomódulos y expansión de la red.',
-		eyebrow: 'Inversores y comunidad',
-		title: 'Financiación de infraestructura y experimentos concretos',
-		lead:
-			'El apoyo a Gelyrix debe mapearse a tareas claras: un estudio, un criomódulo, una ubicación regional o material educativo público.',
-		image: images.funding,
-		formats: ['Donaciones y subvenciones.', 'Participación DAO o mediante tokens cuando tenga estructura legal.', 'Financiación de experimentos específicos con métricas de resultado.'],
-		principles: ['Presupuesto y objetivos transparentes.', 'Métricas abiertas e informes regulares.', 'Obligaciones éticas con clientes, participantes e investigadores futuros.'],
-		focus: ['Apoyo a investigación de laboratorio.', 'Lanzamiento de nuevos criomódulos.', 'Expansión de la red de almacenamiento y formación de operadores locales.']
-	}
 };
 
-export const contactsContent = {
+export type ContactsContent = {
+	ru: {
+		metaTitle: string;
+		metaDescription: string;
+		eyebrow: string;
+		title: string;
+		lead: string;
+		image: string;
+		email: string;
+		methods: string[];
+		consultationTitle: string;
+		communityTitle: string;
+		name: string;
+		contact: string;
+		message: string;
+		interest: string;
+		options: string[];
+		submit: string;
+		success: string;
+		disclaimer: string;
+		spam: string;
+	};
+	en: {
+		metaTitle: string;
+		metaDescription: string;
+		eyebrow: string;
+		title: string;
+		lead: string;
+		image: string;
+		email: string;
+		methods: string[];
+		consultationTitle: string;
+		communityTitle: string;
+		name: string;
+		contact: string;
+		message: string;
+		interest: string;
+		options: string[];
+		submit: string;
+		success: string;
+		disclaimer: string;
+		spam: string;
+	};
+};
+
+export const contactsContent: ContactsContent = {
 	ru: {
 		metaTitle: 'Контакты Gelyrix',
 		metaDescription: 'Формы для консультации, участия в исследованиях, партнерства, инвестиций и криомодулей.',
@@ -815,16 +693,18 @@ export const contactsContent = {
 			'Мы разделяем запросы по направлениям: консультация, питомец, нейросохранение, партнерская локация, криомодуль, исследование или финансирование.',
 		image: images.contact,
 		email: 'rnd@gelyrix.com',
-		methods: ['Юридический статус: НКО/объединение, юрисдикция уточняется в документах.'],
-		consultationTitle: 'Запросить консультацию',
-		communityTitle: 'Присоединиться к исследованиям / инвестировать',
+		methods: ['Юридический статус: НКО/объединение, юрисдикция уточняется в документах.', 'Telegram bot: https://t.me/CryomBot'],
+		consultationTitle: 'Обсудить случай сохранения',
+		communityTitle: 'Задать вопрос в Telegram',
 		name: 'Имя',
 		contact: 'Email или Telegram',
 		message: 'Краткий вопрос',
 		interest: 'Тип интереса',
 		options: ['Ученый / инженер', 'Инвестор / DAO', 'Партнерская клиника', 'Оператор хранилища', 'Криомодуль'],
-		submit: 'Отправить',
-		success: 'Заявка подготовлена. Подключите Appwrite или другой обработчик формы для отправки на сервер.',
+		submit: 'Открыть Telegram',
+		success: 'Мы используем контактные данные только для ответа на запрос и не передаём их третьим лицам без согласия.',
+		disclaimer:
+			'Пожалуйста, не указывайте медицинские диагнозы или чувствительные персональные данные в открытой форме; для приватных обсуждений используйте Telegram bot.',
 		spam: 'Оставьте это поле пустым'
 	},
 	en: {
@@ -836,39 +716,20 @@ export const contactsContent = {
 			'We route requests by direction: consultation, pet, neurosafekeeping, partner location, cryomodule, research, or funding.',
 		image: images.contact,
 		email: 'rnd@gelyrix.com',
-		methods: ['Legal status: non-profit association, jurisdiction clarified in documents.'],
-		consultationTitle: 'Request a consultation',
-		communityTitle: 'Join research / invest',
+		methods: ['Legal status: non-profit association, jurisdiction clarified in documents.', 'Telegram bot: https://t.me/CryomBot'],
+		consultationTitle: 'Discuss preservation case',
+		communityTitle: 'Ask a question in Telegram',
 		name: 'Name',
 		contact: 'Email or Telegram',
 		message: 'Short question',
 		interest: 'Interest type',
 		options: ['Scientist / engineer', 'Investor / DAO', 'Partner clinic', 'Storage operator', 'Cryomodule'],
-		submit: 'Submit',
-		success: 'Request prepared. Connect Appwrite or another form handler to send it to the server.',
+		submit: 'Open Telegram',
+		success: 'We use contact details only to respond to your request and do not share them with third parties without consent.',
+		disclaimer:
+			'Please do not include medical diagnoses or sensitive personal data in the open form; use the Telegram bot for private discussions.',
 		spam: 'Leave this field empty'
 	},
-	es: {
-		metaTitle: 'Contactos de Gelyrix',
-		metaDescription: 'Formularios para consulta, participación en investigación, asociaciones, inversión y criomódulos.',
-		eyebrow: 'Contactos',
-		title: 'Cuéntanos qué escenario necesitas',
-		lead:
-			'Dirigimos las solicitudes por línea: consulta, mascota, neurosalvaguarda, ubicación asociada, criomódulo, investigación o financiación.',
-		image: images.contact,
-		email: 'rnd@gelyrix.com',
-		methods: ['Estatus legal: asociación sin ánimo de lucro; la jurisdicción se aclara en los documentos.'],
-		consultationTitle: 'Solicitar una consulta',
-		communityTitle: 'Unirse a la investigación / invertir',
-		name: 'Nombre',
-		contact: 'Email o Telegram',
-		message: 'Pregunta breve',
-		interest: 'Tipo de interés',
-		options: ['Científico / ingeniero', 'Inversor / DAO', 'Clínica asociada', 'Operador de almacenamiento', 'Criomódulo'],
-		submit: 'Enviar',
-		success: 'Solicitud preparada. Conecta Appwrite u otro manejador de formularios para enviarla al servidor.',
-		spam: 'Deja este campo vacío'
-	}
 };
 
 export const legalContent = {
@@ -904,22 +765,6 @@ export const legalContent = {
 			'Website materials are not medical, legal, or investment advice.'
 		]
 	},
-	es: {
-		metaTitle: 'Información legal y descargo de responsabilidad',
-		metaDescription: 'Estado experimental de la criónica y la neurosalvaguarda, sin garantía de restauración y con límites legales.',
-		eyebrow: 'Información legal',
-		title: 'Estatus experimental y límites',
-		lead:
-			'Esta página documenta notas legales y éticas básicas. Los términos específicos dependen de la jurisdicción, el tipo de servicio y los documentos del cliente.',
-		image: images.infrastructure,
-		items: [
-			'La criónica y la neurosalvaguarda son métodos experimentales.',
-			'Gelyrix no garantiza la restauración futura de identidad, organismo o función.',
-			'La disponibilidad del servicio depende de la ley del país y la región.',
-			'Los procedimientos requieren documentos, consentimiento y verificación del estatus legal.',
-			'Los materiales del sitio no son asesoría médica, legal ni de inversión.'
-		]
-	}
 };
 
 export const faqContent = {
@@ -955,22 +800,6 @@ export const faqContent = {
 			{ q: 'How is a cryomodule different from a regular building?', a: 'A cryomodule is designed around storage, safety, engineering systems, monitoring, and lab scalability.' }
 		]
 	},
-	es: {
-		metaTitle: 'FAQ de criónica Gelyrix',
-		metaDescription: 'Respuestas sobre seguridad, legalidad, reanimación, mascotas, red de almacenamiento y criomódulos.',
-		eyebrow: 'FAQ',
-		title: 'Preguntas frecuentes',
-		lead: 'Respuestas breves a preguntas que suelen aparecer antes de una consulta.',
-		image: images.dewar,
-		items: [
-			{ q: '¿Es peligroso?', a: 'El riesgo depende del escenario. Documentamos riesgos, seguimos protocolos de seguridad y comunicamos el estatus experimental.' },
-			{ q: '¿Es legal?', a: 'El estatus depende de la jurisdicción y del tipo de biomaterial. Hay que revisar documentos y reglas aplicables antes del procedimiento.' },
-			{ q: '¿Es realista la reanimación?', a: 'Hoy no se puede garantizar la reanimación humana ni la restauración de la identidad. El objetivo actual es preservar estructura y mejorar reversibilidad.' },
-			{ q: '¿Por qué preservar animales?', a: 'Las mascotas dan a sus dueños un motivo personal y ayudan a desarrollar protocolos con menos complejidad legal que la criónica humana.' },
-			{ q: '¿Cómo funciona la red de almacenamiento?', a: 'Los socios locales siguen estándares Gelyrix: protocolos, soporte de lanzamiento, monitoreo, informes y coordinación.' },
-			{ q: '¿En qué se diferencia un criomódulo de un edificio normal?', a: 'Un criomódulo se diseña alrededor de almacenamiento, seguridad, sistemas de ingeniería, monitoreo y escalabilidad del laboratorio.' }
-		]
-	}
 };
 
 export const blogContent = {
@@ -994,16 +823,6 @@ export const blogContent = {
 		image: images.research,
 		categories: ['Cryonics 101', 'Myths and facts', 'Science and research', 'Future scenarios', 'Practice and ethics', 'Cryonics infrastructure']
 	},
-	es: {
-		metaTitle: 'Centro de conocimiento Gelyrix',
-		metaDescription: 'Artículos sobre criónica, mitos y hechos, investigación, escenarios futuros, ética e infraestructura de almacenamiento.',
-		eyebrow: 'Centro de conocimiento',
-		title: 'Criónica sin mitos ni niebla de marketing',
-		lead:
-			'La parrilla editorial inicial: fundamentos, límites científicos, escenarios futuros, ética e infraestructura.',
-		image: images.research,
-		categories: ['Criónica 101', 'Mitos y hechos', 'Ciencia e investigación', 'Escenarios futuros', 'Práctica y ética', 'Infraestructura criónica']
-	}
 };
 
 export const articles = {

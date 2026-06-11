@@ -1,14 +1,12 @@
 import { addMessages, init, locale } from 'svelte-i18n';
 import { browser } from '$app/environment';
 import en from '$lib/translations/en.json';
-import es from '$lib/translations/es.json';
 import { defaultLocale, isSupportedLocale, supportedLocales } from '$lib/locales';
 import ru from '$lib/translations/ru.json';
 
 const fallbackLocale = defaultLocale;
 
 addMessages('en', en);
-addMessages('es', es);
 addMessages('ru', ru);
 
 const getInitialLocale = () => {
