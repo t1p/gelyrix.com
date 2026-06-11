@@ -692,8 +692,11 @@ export const contactsContent: ContactsContent = {
 		lead:
 			'Мы разделяем запросы по направлениям: консультация, питомец, нейросохранение, партнерская локация, криомодуль, исследование или финансирование.',
 		image: images.contact,
-		email: 'rnd@gelyrix.com',
-		methods: ['Юридический статус: НКО/объединение, юрисдикция уточняется в документах.', 'Telegram bot: https://t.me/CryomBot'],
+		email: 'main@gelyrix.com',
+		methods: [
+			'Юридический статус: Некоммерческое объединение — https://monte.wiki/ru/GELYRIX',
+			'Telegram: @CryomBot — https://t.me/CryomBot'
+		],
 		consultationTitle: 'Обсудить случай сохранения',
 		communityTitle: 'Задать вопрос в Telegram',
 		name: 'Имя',
@@ -715,8 +718,11 @@ export const contactsContent: ContactsContent = {
 		lead:
 			'We route requests by direction: consultation, pet, neurosafekeeping, partner location, cryomodule, research, or funding.',
 		image: images.contact,
-		email: 'rnd@gelyrix.com',
-		methods: ['Legal status: non-profit association, jurisdiction clarified in documents.', 'Telegram bot: https://t.me/CryomBot'],
+		email: 'main@gelyrix.com',
+		methods: [
+			'Legal status: Non-profit association — https://monte.wiki/ru/GELYRIX',
+			'Telegram: @CryomBot — https://t.me/CryomBot'
+		],
 		consultationTitle: 'Discuss preservation case',
 		communityTitle: 'Ask a question in Telegram',
 		name: 'Name',

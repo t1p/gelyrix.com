@@ -10,6 +10,7 @@
 	$: isRu = currentLocale === 'ru';
 	$: adminSeo = getSeoForPath($page.data.adminContent, '/contacts', currentLocale);
 	$: telegramUrl = 'https://t.me/CryomBot';
+	$: legalStatusUrl = 'https://monte.wiki/ru/GELYRIX';
 </script>
 
 <svelte:head>
@@ -43,14 +44,19 @@
 				</li>
 				<li class="flex gap-3">
 					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
-					<a class="font-semibold text-evergreen hover:text-tide" href={telegramUrl}>@CryomBot</a>
+					<a
+						class="font-semibold text-evergreen hover:text-tide"
+						href={legalStatusUrl}
+						target="_blank"
+						rel="noreferrer"
+					>
+						{content.methods[0]}
+					</a>
 				</li>
-				{#each content.methods as item}
-					<li class="flex gap-3">
-						<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
-						<span>{item}</span>
-					</li>
-				{/each}
+				<li class="flex gap-3">
+					<span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-evergreen"></span>
+					<a class="font-semibold text-evergreen hover:text-tide" href={telegramUrl} target="_blank" rel="noreferrer">@CryomBot</a>
+				</li>
 			</ul>
 		</aside>
 
